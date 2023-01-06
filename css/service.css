@@ -1,0 +1,299 @@
+:root {
+    --beige-color: #f3f1e8;
+    --blue-color: #29acd2;
+    --green-color:#029405;
+    --dark-blue-color:  rgb(0, 80, 147);
+    --note-color:#9a9064;
+    --gray-square-size: 60px;
+}
+
+section {
+    padding: 50px 0;
+}
+h2 {
+    font-size: 2rem;
+    font-size: clamp(1.25rem, 0.9rem + 2.3vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+}
+h3 {
+    font-size: 1.5rem;
+    font-size: clamp(1.17rem, 0.8rem + 0.7vw, 1.5rem);
+    font-weight: 700;
+}
+main img {
+    width: 100%;
+}
+span.note {
+    color: var(--note-color);
+    display: block;
+}
+span.note::before, ul.notes > li::before {
+    content: '※';
+    position: relative;
+    padding-right: 5px;
+}
+.flame-line {
+    margin-bottom: 60px;
+}
+
+/* Components  */
+.row-main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+.row-main > * {
+    /* width: 50%; */
+    flex: 1;
+    padding: 5px;
+}
+.row-main img {
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.catchphrase {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.catchphrase .h1 {
+    font-size: 22px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 34px;
+    font-weight: bold;
+}
+.point-wrap {
+    display: flex;
+    align-items: flex-start;
+}
+.point-wrap p {
+    line-height: 1.2;
+}
+.point-wrap .gray-square {
+    background: gray;
+    color: white;
+    width: var(--gray-square-size);
+    height: var(--gray-square-size);
+    min-width: var(--gray-square-size);
+    min-height: var(--gray-square-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px gray;
+}
+.point-wrap .gray-square p {
+    margin-bottom: 0;
+}
+.point-wrap span.price {
+    font-size: 2rem;
+    font-size: clamp(1.25rem, 0.9rem + 2.3vw, 2rem);
+    white-space: nowrap;
+    font-weight: 600;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+
+/* Intro Section  */
+#intro h2 span {
+    display: inline-block;
+    animation: rock 3s infinite alternate-reverse;
+}
+@keyframes rock {
+    from {
+        transform: rotate(-10deg)
+    }
+    to {
+        transform: rotate(27deg);
+    }
+}
+#intro .row-main {
+    display: flex;
+}
+#intro img {
+    object-fit: contain!important;
+}
+.concerns h2 {
+    color: var(--dark-blue-color);
+    margin-bottom: 1em;
+}
+.concerned-image {
+    flex: 2;
+    animation: wiggle 5s infinite alternate-reverse;
+}
+@keyframes wiggle {
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+}
+.concerned-image img {
+    width: 100%;
+    height: 100%;
+}
+.bubble {
+    flex: 3;
+    background-image: url(/img/service/bubble.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bubble-image {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.bubble-text {
+    position: relative;
+    top: 17%;
+}
+.bubble-text ul {
+    font-size: clamp(1rem, 0.5rem + 1vw, 1.2rem);
+    width: fit-content;
+    margin-inline: auto;
+    line-height: 1.7;
+}
+
+
+/* Slider Section  */
+#slider {
+    background: var(--beige-color);
+}
+#slider .slider, #slider .maintenance-slider {
+    margin-bottom: 0;
+}
+#slider .flexslider, #slider .maintenance-slider {
+    margin: 48px 0;
+    box-shadow: 0 0 5px gray;
+}
+#slider .maintenance-slider .slide {
+    padding: 5px;
+    background: white;
+}
+#slider .maintenance-slider .slide p {
+    margin-bottom: 0;
+    padding: 5px 0 0 10px;
+}
+
+
+/* 1. Maintenace Section  */
+#maintenance {
+    padding-top: 50px;
+}
+
+#maintenance ul.notes {
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1.1;
+    /* color: var(--note-color);
+    background: var(--beige-color);
+    border: thin solid #cccccc;
+    border-radius: 6px; */
+    list-style: none;
+    padding-left: 2em;
+    text-indent: -1em;
+}
+#maintenance .row-main {
+    margin-bottom: 50px;
+}
+
+
+/* 2. Mowmowicecream Section  */
+#mowmowicecream .row-main{
+    margin-bottom: 50px;
+}
+#mowmowicecream .banda {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-inline: auto;
+}
+#mowmowicecream .banda .pairs {
+    display: flex;
+    padding: 20px 0;
+}
+#mowmowicecream .banda .pairs:not(:last-of-type) {
+    border-bottom: 2px dotted gray;
+}
+#mowmowicecream .banda .pairs .pair-item {
+    position: relative;
+}
+#mowmowicecream .banda .pairs .pair-item p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.17rem;
+    font-size: clamp(0.9rem, 0.5rem + 1vw, 1.17rem);
+    width: 100%;
+    padding: 1em 0;
+    padding: clamp(0.5em, 0.2em + 0.7vw, 1em) 0;
+    margin-bottom: 0;
+    
+}
+#mowmowicecream .banda .pairs .pair-item.before p {
+    background: rgba(0, 0, 0, 0.65);
+}
+#mowmowicecream .banda .pairs .pair-item.after  p {
+    background: rgba(2, 148, 5, 0.65);
+}
+
+
+/* 3. Sheet Section  */
+
+/* 4. Panel Section  */
+
+/* 5. Outro Section  */
+#outro {
+    text-align: center;
+}
+#outro p {
+    margin-inline: auto;
+    max-width: 900px;
+    font-size: 1.17rem;
+    font-weight: 700;
+}
+
+
+/* Media Queries  */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 25px 0;
+    }
+    .row-main {
+        flex-direction: column;
+    }
+    .row-main > * {
+        margin-inline: auto;
+        flex: 1;
+        width: 100%;
+    }
+    .point-wrap p {
+        line-height: 1.5;
+    }
+    .concerns .row-main {
+        gap: 0;
+    }
+    .concerned-image {
+        order: 2;
+        max-width: 300px;
+
+    }
+    .bubble-text {
+        padding: 40px 0 60px;
+    }
+    #maintenance .row-main {
+        margin-bottom: 0;
+    }
+}

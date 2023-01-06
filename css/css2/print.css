@@ -1,0 +1,8 @@
+﻿@charset "UTF-8";
+
+.break { 
+	page-break-before: always; 
+}
+img.top{
+	display:none;
+}

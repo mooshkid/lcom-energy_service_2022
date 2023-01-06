@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.curle {
+	width: 18%;
+	height: 18%;
+	text-align: center;
+	margin-top: 3px;
+	margin-right: 2px;
+	margin-bottom: 3px;
+	margin-left: 2px;
+}
+.curle:hover {
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	-ms-filter: "alpha(opacity=85)";
+}
+.spacer-10 {
+	height: 10px;
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+.curle {
+	width: 45%;
+	height: 45%;
+	margin: 2px;
+	text-align: center;
+}
+}
+.win {
+	width: 23%;
+	height: 23%;
+	margin: 3px;
+	text-align: center;
+}
+.win2 {
+	width: 20%;
+	height: 20%;
+	margin: 3px;
+	text-align: center;
+}
+.win:hover {
+	opacity: 0.85;
+	filter: alpha(opacity=85);
+	-ms-filter: "alpha(opacity=85)";
+}
+
+@media (max-width: 767px) {
+.win {
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	margin: 6px;
+}
+.win2 {
+	width: 49%;
+	height: 49%;
+	margin: 0px;
+	text-align: center;
+}
+}
+.flame {
+	width: 100%;
+	white-space: nowrap;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.spacer-top {
+	height: 80px;
+	width: 100%;
+	margin-top: 50px;
+}
+.spacer-top2 {
+	height: 20px;
+	width: 100%;
+	margin-top: 30px;
+}
+.bottomspace {
+	height: 60px;
+	width: 100%;
+}
